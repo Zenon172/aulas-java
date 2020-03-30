@@ -1,0 +1,46 @@
+package enttities;
+
+public class calculaAumento {
+	
+	float percent;
+	float salario;
+	
+
+	public calculaAumento(float percent) {
+		
+		this.percent = percent;
+	}
+	
+	public float calcula(salario, percent) {
+		
+		percent = percent / 100.0;
+		
+		salario = salario * percent;
+		
+		return salario;
+		
+	}
+
+	public float getPercent() {
+		return percent;
+	}
+
+	public void setPercent(float percent) {
+		this.percent = percent;
+	}
+
+	public float getSalario() {
+		return salario;
+	}
+
+	public void setSalario(float salario) {
+		this.salario = salario;
+	}
+	
+	
+
+	
+	
+	
+
+}

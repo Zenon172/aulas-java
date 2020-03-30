@@ -1,0 +1,24 @@
+package enttities;
+
+public class calculaAumento {
+	
+	float percent;
+
+	public calculaAumento(float percent) {
+		
+		this.percent = percent;
+	}
+
+	public float getPercent() {
+		return percent;
+	}
+
+	public void setPercent(float percent) {
+		this.percent = percent;
+	}
+
+	
+	
+	
+
+}

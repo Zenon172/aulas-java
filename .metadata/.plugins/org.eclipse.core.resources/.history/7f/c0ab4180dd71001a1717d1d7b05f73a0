@@ -1,0 +1,63 @@
+package aplication;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+import enttities.Funcionarios;
+import enttities.calculaAumento;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int id = 0;
+		String nome = null;
+		double salario = 0;
+		
+		
+		System.out.println("Informe a quantidade de funcionarios que deseja cadastrar: ");
+		int quant = sc.nextInt();
+		
+		Funcionarios funcionarios = new Funcionarios(id, nome, salario);
+		List<Funcionarios> func = new ArrayList<>();
+		
+		for (int x = 0; x < quant; x++) {
+		
+		System.out.println("Funcionario " + (x + 1) + ":");
+		System.out.println("informe o id do funcionario: ");
+		funcionarios.setId(sc.nextInt());
+		System.out.println("informe o nome do funcionario: ");
+		sc.nextLine();
+		funcionarios.setNome(sc.nextLine());
+		System.out.println("Informe o salario do funcionario: ");
+		funcionarios.setSalario(sc.nextFloat());		
+		func.add(funcionarios);
+		System.out.println(func);
+		}
+		
+		System.out.println("Informe o id do funcionarios que receberá aumento: ");
+		id = sc.nextInt();
+		
+		if (funcionarios.getId() == id) {
+			
+			System.out.println("Informe a porcentagem de aumento de salário: ");
+			 
+		}
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}
